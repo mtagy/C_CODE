@@ -20,13 +20,15 @@ int main()
     else
         printf("不录取\n"); // else语句同理
 
-    if (score < 60) //多分支
+    int score1 = 0;
+    scanf("%d", &score1);
+    if (score1 < 60) //多分支(只选择一个分支执行语句)
         printf("不合格\n");
-    else if (score >= 60 && score < 70)
+    else if (score1 >= 60 && score1 < 70)
         printf("合格\n");
-    else if (score >= 70 && score < 80)
+    else if (score1 >= 70 && score1 < 80)
         printf("良好\n");
-    else if (score >= 80 && score < 90)
+    else if (score1 >= 80 && score1 < 90)
         printf("中等\n");
     else
         printf("优秀\n");
