@@ -9,7 +9,6 @@ int fact(int n1)
     }
     else
         return n1 * fact(n1 - 1);
-    ;
 }
 
 // 2.迭代
