@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-int main()
-{ //字符串反向排序（字符串数组存储内容反向）
+int main() //字符串逆序
+{          //字符串反向排序（字符串数组存储内容反向）
     char arr[] = "abcdef";
     int left = 0;
     int right = strlen(arr) - 1;

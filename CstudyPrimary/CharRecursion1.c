@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
+//字符串逆序  迭代实现（循环也是一种迭代）
 void reverse(char arr[])
 {
     int left = 0;
