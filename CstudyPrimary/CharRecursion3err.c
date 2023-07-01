@@ -6,13 +6,11 @@
 
 void reverse(char arr[], int left, int right)
 {
+    char tmp = arr[left];
+    arr[left] = arr[right];
+    arr[right] = tmp;
     if (left < right)
-    {
-        char tmp = arr[left];
-        arr[left] = arr[right];
-        arr[right] = tmp;
         reverse(arr, left + 1, right - 1);
-    }
 }
 
 int my_strlen(char *str)
