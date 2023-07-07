@@ -1,0 +1,6 @@
+﻿  game.c
+D:\code\C_CODE\chess\chess\game.h(1,1): warning C4828: 文件包含在偏移 0x1b2 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+  test.c
+D:\code\C_CODE\chess\chess\game.h(1,1): warning C4828: 文件包含在偏移 0x1b2 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+  正在生成代码...
+  chess.vcxproj -> D:\code\C_CODE\chess\x64\Debug\chess.exe

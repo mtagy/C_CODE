@@ -20,7 +20,7 @@ void game()
     {
         PlayerMove(board, ROW, COL);
         //判断输赢
-        ret = IsWSin(board, ROW, COL);
+        ret = IsWin(board, ROW, COL);
         if (ret != 'C')
         {
             break;
@@ -29,7 +29,7 @@ void game()
 
         ComputerMove(board, ROW, COL);
         //判断输赢
-        ret = IsWSin(board, ROW, COL);
+        ret = IsWin(board, ROW, COL);
         if (ret != 'C')
         {
             break;
