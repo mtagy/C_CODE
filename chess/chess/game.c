@@ -96,10 +96,38 @@ void ComputerMove(char Board[ROW][COL], int row, int col)
 {
 	int x = 0, y = 0;
 	printf("电脑下棋:>\n");
-	//按电脑赢去下棋
+	//按电脑赢的下法去下棋
+	//行
+	while (1)
+	{
+		int i = 0, j = 0, count1 = 0, count2 = 0;
+		for (i = 0; i < row; i++)
+		{
+			for (j = 0; j < col; j++)
+			{
+				if (Board[i][j] == '*') break;
+				else if (Board[i][j] == '#') count1++;
+				else if (Board[i][j] == ' ') count2++;
+				if ((count1 + count2) == row)
+				{
+					x = i;
+					y = rand() % COL;
+					if (Board[x][y] == ' ')
+					{
+						Board[x][y] = '#';
+						break;
+					}
+				}
+			}
+			printf("#=%d '=%d\n", count1, count2);
+			count1 = 0;
+			count2 = 0;
+
+		}
+		if ((count1 + count2) == row) break;
+	}
 
 	//不让玩家赢 拦棋
-
 
 }
 
