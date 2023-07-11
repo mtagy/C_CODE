@@ -108,25 +108,115 @@ void ComputerMove(char Board[ROW][COL], int row, int col)
 				if (Board[i][j] == '*') break;
 				else if (Board[i][j] == '#') count1++;
 				else if (Board[i][j] == ' ') count2++;
-				if ((count1 + count2) == row)
+				//printf("#=%d '=%d\n", count1, count2);
+
+			}
+			if ((count1 + count2) == col)
+			{
+				while (1)
 				{
 					x = i;
 					y = rand() % COL;
+					//printf("x=%d y=%d\n", x, y);
 					if (Board[x][y] == ' ')
 					{
 						Board[x][y] = '#';
 						break;
 					}
 				}
+				break;
 			}
-			printf("#=%d '=%d\n", count1, count2);
 			count1 = 0;
 			count2 = 0;
-
 		}
-		if ((count1 + count2) == row) break;
-	}
+		if (count1 + count2 == col)break;
 
+		//列
+		count1 = 0;
+		count2 = 0;
+		for (j = 0; j < col; j++)
+		{
+			for (i = 0; i < row; i++)
+			{
+				if (Board[i][j] == '*') break;
+				else if (Board[i][j] == '#') count1++;
+				else if (Board[i][j] == ' ') count2++;
+				//printf("#=%d '=%d\n", count1, count2);
+
+			}
+			if ((count1 + count2) == row)
+			{
+				while (1)
+				{
+					x = rand() % ROW;
+					y = j;
+					//printf("x=%d y=%d\n", x, y);
+					if (Board[x][y] == ' ')
+					{
+						Board[x][y] = '#';
+						break;
+					}
+				}
+				break;
+			}
+			count1 = 0;
+			count2 = 0;
+		}
+		if (count1 + count2 == row)break;
+
+		//对角线1
+		count1 = 0;
+		count2 = 0;
+		for (i = 0; i < row; i++)
+		{
+			if (Board[i][row - 1 - i] == ' * ')  break;
+			else if (Board[i][row - 1 - i] == ' ') count1++;
+			else if (Board[i][row - 1 - i] == '#') count2++;
+			if (count1 + count2 == row)
+			{
+				while (1)
+				{
+					i = rand() % row;
+					x = i;
+					y = row - 1 - i;
+					if (Board[x][y] == ' ')
+					{
+						Board[x][y] = '#';
+						break;
+					}
+				}
+				break;
+			}
+		}
+		if (count1 + count2 == row) break;
+
+		//对角线2
+		count1 = 0;
+		count2 = 0;
+		for (i = 0; i < row; i++)
+		{
+			if (Board[i][i] == ' * ')  break;
+			else if (Board[i][i] == ' ') count1++;
+			else if (Board[i][i] == '#') count2++;
+			if (count1 + count2 == row)
+			{
+				while (1)
+				{
+					i = rand() % row;
+					x = i;
+					y = i;
+					if (Board[x][y] == ' ')
+					{
+						Board[x][y] = '#';
+						break;
+					}
+				}
+				break;
+			}
+		}
+		break;
+	}
+	//电脑判断采用那种方式下棋更容易赢 
 	//不让玩家赢 拦棋
 
 }
@@ -154,7 +244,7 @@ char IsWin(char Board[ROW][COL], int row, int col)
 		{
 			if (Board[i][j] == '*') count1++;
 			if (Board[i][j] == '#') count2++;
-			if (count1 == row || count2 == row) return Board[i][j];
+			if (count1 == col || count2 == col) return Board[i][j];
 		}
 		count1 = 0;
 		count2 = 0;
