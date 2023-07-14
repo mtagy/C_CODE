@@ -12,7 +12,7 @@ int main()
         char tmp = arr[left];
         arr[left] = arr[right];
         arr[right] = tmp;
-        left--;
+        left++;
         right--;
     }
     printf("%s\n", arr);

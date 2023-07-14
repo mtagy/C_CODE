@@ -2,8 +2,8 @@
 int main()
 {
     int money = 0;
-    /*scanf("%d", &money);//方法一
-    int total = money;
+    scanf("%d", &money);
+    /*int total = money;//方法一
     int empty = money;
     //置换
     while (empty >= 2)
