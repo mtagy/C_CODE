@@ -43,9 +43,9 @@ void SetMine(char board[ROWS][COLS], int row, int col)
     {                             //通过坐标布置雷 x:1~9 row y:1~9 col
         int x = rand() % row + 1; // 0~row-1 +1 -> 0~row
         int y = rand() % col + 1;
-        if (board[x][y] == 0) //循环次数有可能大于10，生成的坐标已经被设置过，需要重新设置
+        if (board[x][y] == '0') //循环次数有可能大于10，生成的坐标已经被设置过，需要重新设置
         {
-            board[x][y] = 1;
+            board[x][y] = '1';
             count--;
         }
     }
