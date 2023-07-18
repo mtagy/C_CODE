@@ -1,0 +1,56 @@
+﻿  frog_jump_step.c
+D:\code\C_CODE\recursion\recursion\frog_jump_step.c(41,5): error C2084: 函数“int main()”已有主体
+D:\code\C_CODE\recursion\recursion\frog_jump_step.c(24,5): message : 参见“main”的前一个定义
+  hanoi.c
+  t1.c
+  t10.c
+  t2.c
+D:\code\C_CODE\recursion\recursion\t2.c(17,5): error C2084: 函数“int my_strlen(char *)”已有主体
+D:\code\C_CODE\recursion\recursion\t2.c(6,5): message : 参见“my_strlen”的前一个定义
+  t3.c
+D:\code\C_CODE\recursion\recursion\t3.c(28,5): error C2084: 函数“int fact(int)”已有主体
+D:\code\C_CODE\recursion\recursion\t3.c(4,5): message : 参见“fact”的前一个定义
+D:\code\C_CODE\recursion\recursion\t3.c(39,5): error C2084: 函数“int main()”已有主体
+D:\code\C_CODE\recursion\recursion\t3.c(16,5): message : 参见“main”的前一个定义
+  t4.c
+D:\code\C_CODE\recursion\recursion\t4.c(25,5): error C2084: 函数“int fib(int)”已有主体
+D:\code\C_CODE\recursion\recursion\t4.c(5,5): message : 参见“fib”的前一个定义
+D:\code\C_CODE\recursion\recursion\t4.c(40,5): error C2084: 函数“int main()”已有主体
+D:\code\C_CODE\recursion\recursion\t4.c(13,5): message : 参见“main”的前一个定义
+  t5.c
+D:\code\C_CODE\recursion\recursion\t5.c(2,1): error C2059: 语法错误:“常数”
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(386,61): error C2146: 语法错误: 缺少“)”(在标识符“_StackCookie”的前面)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(386,61): error C2061: 语法错误: 标识符“_StackCookie”
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(386,61): error C2059: 语法错误:“;”
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(386,73): error C2059: 语法错误:“)”
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(387,77): error C2146: 语法错误: 缺少“)”(在标识符“_StackCookie”的前面)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(387,77): error C2061: 语法错误: 标识符“_StackCookie”
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(387,77): error C2059: 语法错误:“;”
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(387,89): error C2059: 语法错误:“)”
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(391,18): error C2061: 语法错误: 标识符“__security_cookie”
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\vcruntime.h(391,18): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt.h(368,10): error C2081: “uintptr_t”: 形参表中的名称非法
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt.h(380,26): error C2146: 语法错误: 缺少“)”(在标识符“_Reserved”的前面)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt.h(380,26): error C2081: “uintptr_t”: 形参表中的名称非法
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt.h(380,26): error C2061: 语法错误: 标识符“_Reserved”
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt.h(380,26): error C2059: 语法错误:“;”
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt.h(380,35): error C2059: 语法错误:“)”
+D:\code\C_CODE\recursion\recursion\t5.c(9,26): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\C_CODE\recursion\recursion\t5.c(28,26): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\C_CODE\recursion\recursion\t5.c(39,5): error C2084: 函数“int main()”已有主体
+D:\code\C_CODE\recursion\recursion\t5.c(5,5): message : 参见“main”的前一个定义
+D:\code\C_CODE\recursion\recursion\t5.c(51,6): error C2084: 函数“void reverse(char *)”已有主体
+D:\code\C_CODE\recursion\recursion\t5.c(25,6): message : 参见“reverse”的前一个定义
+D:\code\C_CODE\recursion\recursion\t5.c(53,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\C_CODE\recursion\recursion\t5.c(80,21): warning C4020: “reverse”: 实参太多
+D:\code\C_CODE\recursion\recursion\t5.c(100,15): warning C4020: “reverse”: 实参太多
+  t6.c
+  t7.c
+  t8.c
+  t9.c
+D:\code\C_CODE\recursion\recursion\t9.c(27,5): error C2084: 函数“int main()”已有主体
+D:\code\C_CODE\recursion\recursion\t9.c(6,5): message : 参见“main”的前一个定义
+D:\code\C_CODE\recursion\recursion\t9.c(64,5): error C2084: 函数“int divisor(int,int)”已有主体
+D:\code\C_CODE\recursion\recursion\t9.c(42,5): message : 参见“divisor”的前一个定义
+  正在生成代码...
+D:\code\C_CODE\recursion\recursion\t6.c(13): warning C4715: “Pow”: 不是所有的控件路径都返回值
