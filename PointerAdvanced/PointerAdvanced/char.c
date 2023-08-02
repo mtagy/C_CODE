@@ -172,4 +172,93 @@ int main()
 	return 0;
 }*/
 
+#include<stdio.h>
 
+void menu()
+{
+	printf("*******************************************\n");
+	printf("*************1. add       2. sub **********\n");
+	printf("*************3. mul       4. div **********\n");
+	printf("*************0. exit             **********\n");
+	printf("*******************************************\n");
+}
+
+void calc(int (*pf)(int, int))
+{
+	int x = 0, y = 0, ret = 0;
+	printf("请输入两个操作数：>");
+	scanf("%d %d", &x, &y);
+	ret = pf(x, y);
+	printf("%d\n", ret);
+}
+
+int Add(int x, int y)
+{
+	return x + y;
+}
+
+int Sub(int x, int y)
+{
+	return x - y;
+}
+
+int Mul(int x, int y)
+{
+	return x * y;
+}
+
+int Div(int x, int y)
+{
+	return x / y;
+}
+
+int main()
+{
+	int input = 0;
+	do
+	{
+		menu();
+		printf("请选择：>");
+		scanf("%d", &input);
+		//printf("请输入两个操作数：>");
+		//scanf("%d %d", &x, &y);
+		switch (input)
+		{
+		case 1:
+			//ret = Add(x, y);
+			//printf("%d\n", ret);
+			calc(Add);
+			break;
+		case 2:
+			/*ret = Sub(x, y);
+			printf("%d\n", ret);*/
+			calc(Sub);
+			break;
+		case 3:
+			/*ret = Mul(x, y);
+			printf("%d\n", ret);*/
+			calc(Mul);
+			break;
+		case 4:
+			/*ret = Div(x, y);
+			printf("%d\n", ret);*/
+			calc(Div);
+			break;
+		case 0:
+			printf("退出计算器\n");
+			break;
+		default:
+			printf("选择错误，请重新输入\n");
+			break;
+		}
+	} while (input);
+
+	return 0;
+}
+//问题：输入0/选择错误仍需要输入操作数
+//改进1：case 1:~case 2:加入输入操作数的代码      
+//缺点：代码冗余 重复度高
+//改进2：通过函数指针调用所指向的函数，将重复代码封装为一个函数，传参传不同函数地址调用不同函数实现功能 
+// 回调函数：通过函数指针在适当的时候回头调用他所指向的函数
+//calc(Add); calc(Sub); calc(Mul); calc(Div); 
+//函数指针在大型工程中应用多，是C语言中高级语法
