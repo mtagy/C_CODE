@@ -1,3 +1,2 @@
 ﻿  char.c
-D:\code\C_CODE\PointerAdvanced\PointerAdvanced\char.c(1,1): warning C4828: 文件包含在偏移 0x1867 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
   PointerAdvanced.vcxproj -> D:\code\C_CODE\PointerAdvanced\x64\Debug\PointerAdvanced.exe
