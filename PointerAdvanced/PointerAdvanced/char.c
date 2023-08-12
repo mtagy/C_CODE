@@ -1,18 +1,31 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-//#include <stdio.h>
-//int main()
-//{
-//	/*char ch = 'w';
-//	char* pc = &ch;
-//	*pc = 'b';
-//	printf("%c\n", ch);*/
-//	const char* p = "abcdef";//不是将字符串放入p，把字符串首字符地址放到p
-//	printf("%s", p);       //从首字符地址开始打印直到\0为止 
-//	//printf用%s打印字符串时提供首字符地址即可从首字符地址开始打印直到\0为止
-//	//常量字符串 是不能被修改的 此时p有改的权限 不安全可能会有warning   *p='w'当然这么写程序调试会有问题
-//	//改进：const char* p = "abcdef"; 加一个const修饰限制p不能被改变 ，*p='w'会直接报错
-//	return 0;
-//}
+/*#include <stdio.h>
+int main()
+{
+	//指向单个字符的指针  可以对字符访问修改
+	char ch = 'w';
+	char* pc = &ch;
+	*pc = 'b';
+	printf("%c\n", ch);
+	printf("%c\n", *pc);
+
+	//指向字符串的指针 不能修改
+	const char* p = "abcdef";//不是将字符串放入p，把字符串首字符地址放到p
+	//*p = 'w';
+	printf("%c\n", *p);
+	printf("%s\n", p);       //从首字符地址开始打印直到\0为止
+	//printf用%s打印字符串时提供首字符地址即可从首字符地址开始打印直到\0为止
+	//常量字符串 是不能被修改的 此时p有改的权限 不安全可能会有warning   *p='w'当然这么写程序调试会有问题
+	//改进：const char* p = "abcdef"; 加一个const修饰限制p不能被改变 ，*p='w'会直接报错
+
+	char str[] = "abcdef";
+	char* ps = str;
+	//*ps = 'w';
+	printf("%c\n", *ps);
+	printf("%s\n", ps);
+
+	return 0;
+}*/
 
 /*#include <stdio.h>
 int main()
@@ -630,10 +643,10 @@ int main()
 }*/
 
 
-#include<stdio.h>
-
-int main()
-{
-
-	return 0;
-}
+//#include<stdio.h>
+//
+//int main()
+//{
+//
+//	return 0;
+//}
